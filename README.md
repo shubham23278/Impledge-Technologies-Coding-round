@@ -1,9 +1,9 @@
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+The workspace contains two folders, where:
 
 - `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- `Inputs`: the folder containing the input files
 
 ## Steps to execute your code
 
