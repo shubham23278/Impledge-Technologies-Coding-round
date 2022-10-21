@@ -20,14 +20,14 @@ The search algorithm involves having 2 pointers to the trie structure- current w
 ## Output 
 
 # input_01.txt
-'''
+```
 Longest Compound Word: ratcatdogcat
 Second Longest Compound Word: catsdogcats
 Time Taken : 9ms
-'''
+```
 # input_02.txt
-'''
+```
 Longest Compound Word: ethylenediaminetetraacetates
 Second Longest Compound Word: electroencephalographically
 Time Taken : 678ms
-'''
+```
