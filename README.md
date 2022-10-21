@@ -16,3 +16,18 @@ Step 3 : Run the code.<br>
 Trie structure was used to solve the problem. We can execute insertion and search operations using the trie data structure in O(n) time, where N is the word length.
 
 The search algorithm involves having 2 pointers to the trie structure- current word pointer and new word pointer. The algorithm compares the values of the two pointers to see if they make a compound word. Then the compound words are stored in the finalList array.
+
+## Output 
+
+# input_01.txt
+'''
+Longest Compound Word: ratcatdogcat
+Second Longest Compound Word: catsdogcats
+Time Taken : 9ms
+'''
+# input_02.txt
+'''
+Longest Compound Word: ethylenediaminetetraacetates
+Second Longest Compound Word: electroencephalographically
+Time Taken : 678ms
+'''

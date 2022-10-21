@@ -81,7 +81,7 @@ public class App {
 
         List<String> string = new ArrayList<>();
 
-        Scanner sc = new Scanner(new FileReader("D:/Impledge Coding Question/input_02.txt"));
+        Scanner sc = new Scanner(new FileReader("D:/Impledge Coding Question/WordCompositionProblem/Inputs/input_02.txt"));
         String str;
         while (sc.hasNext()) {
             str = sc.next();
