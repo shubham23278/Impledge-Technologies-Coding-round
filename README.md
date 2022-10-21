@@ -7,9 +7,9 @@ The workspace contains two folders by default, where:
 
 ## Steps to execute your code
 
-Step 1 : Open the src/App.java file.
-Step 2 : In line 84 of the code in the FileReader, add the path to the input file as the first argument.
-Step 3 : Run the code.
+Step 1 : Open the src/App.java file.<br>
+Step 2 : In line 84 of the code in the FileReader, add the path to the input file as the first argument.<br>
+Step 3 : Run the code.<br>
 
 ## Overview and Approach 
 
