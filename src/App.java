@@ -12,7 +12,7 @@ public class App {
         String string; 
         boolean found;                     
     }
-
+    //inserts the word into the trie
     public static void insert(Node current, String s){
         for(int i=0; i<s.length(); i++){
             char ch = s.charAt(i);
@@ -26,29 +26,32 @@ public class App {
     }
 
     public static void search(Node current, Node new_word){
-
+        //checks if the word is complete or not.
         if(current.string != null && new_word.string != null){
+            //Checks if the word is already found or not.
             if(current.found == false){
-                ans.add(current.string);
+                //If the word is not found, then it is added to the list.
+                finalList.add(current.string);
             }
             current.found = true;
         }
         if(new_word.string != null){
             search(current, root);
         }
-
+        //Checks for common characters in both current word and new word.
         for(int i=0; i<26; i++){
             if(current.childs[i] != null && new_word.childs[i] != null){                           
                 search(current.childs[i], new_word.childs[i]);
             }              
         }
     }
-
+    
     public static void search1(Node current){
+        //Checks if the word is complete, if yes then search function is called.
         if(current.string != null){
             search(current,root);
         }
-        
+        //recursively calls the function for all the childs of the current node.
         for(Node child: current.childs){
             if(child != null){
                 search1(child);
@@ -57,7 +60,7 @@ public class App {
     }
 
     static Node root;
-    static ArrayList<String> ans = new ArrayList<>();
+    static ArrayList<String> finalList = new ArrayList<>();
     
     //wordCompositionProblem Function calls 2 functions and returns the answer.
     public static List<String> wordCompositionProblem(String[] words){
@@ -70,7 +73,7 @@ public class App {
     //2. search1 - To search for the words.
     search1(root);
     
-    return ans;
+    return finalList;
     }
 
     public static void main(String[] args) throws Exception { 
