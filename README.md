@@ -13,5 +13,6 @@ Step 3 : Run the code.<br>
 
 ## Overview and Approach 
 
-Used Trie structure for this problem. The trie data structure allows us to perform inserion and search operations in O(n) where N is the length of the word. 
+Trie structure was used to solve the problem. We can execute insertion and search operations using the trie data structure in O(n) time, where N is the word length.
 
+The search algorithm involves having 2 pointers to the trie structure- current word pointer and new word pointer. The algorithm compares the values of the two pointers to see if they make a compound word. Then the compound words are stored in the finalList array.
